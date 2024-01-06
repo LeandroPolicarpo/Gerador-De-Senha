@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!--Google Fontes-->
+    <link rel="shortcut icon" type="imagex/png" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Gerador de Senhas</title>
+</head>
+
+<body>
+
+
+
+
+    <div class="container">
+
+        <div class="content">
+
+            <h1 class="title">Gerador de<br> senhas aleatórias</h1>
+            <p class="desc">Proteja suas senhas de internet criando senhas fortes e seguras.</p>
+
+
+            <div class="application">
+
+                <div id="pwdContent"></div>
+                <span class="subtitle">Quantidade de caracteres</span>
+
+                <div class="content_range">
+                    <span id="pwdRangeStatus">15</span>
+                    <input type="range" id="pwdRange" min="6" max="15" value="15">
+                </div><!--content_range-->
+
+                <span class="subtitle">Caracteres utilizados</span>
+
+
+
+                <div id="pwdInputsChars">
+                    <label for="numbers">
+                        <input type="checkbox" id="numbers" name="numbers" checked>
+                        <div class="checkbox"></div><span>123</span>
+                    </label>
+
+
+                    <label for="lowercase">
+                        <input type="checkbox" id="lowercase" name="lowercase" checked>
+                        <div class="checkbox"></div><span>abc</span>
+                    </label>
+
+                    <label for="uppercase">
+                        <input type="checkbox" id="uppercase" name="uppercase" checked>
+                        <div class="checkbox"></div><span>ABC</span>
+                    </label>
+
+                    <label for="special">
+                        <input type="checkbox" id="special" name="special" checked>
+                        <div class="checkbox"></div><span>$&#</span>
+                    </label>
+                </div><!--pwdInputsChars-->
+
+                <button id="btnGenerate" type="button">Gerar</button>
+                <button id="btnCopy" type="button">Copiar</button>
+                
+            </div><!--application-->
+
+        </div><!--content-->
+
+    </div><!--container-->
+
+
+
+    <script async src="script.js"></script>
+
+</body>
+
+</html>
